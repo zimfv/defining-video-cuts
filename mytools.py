@@ -125,15 +125,22 @@ def find_all(s, sub):
 def str_to_seconds(time):
     # make float seconds from"HH:MM:SS.XX"
     r = np.array(time.split(':'), dtype=float) * np.array([3600, 60, 1])
-    return round(r.sum(), 2)
+    #return round(r.sum(), 3)
+    return r.sum()
 
 
 def get_cuts(filename):
     # return array of cut moments (frame_id)
     with open(filename, 'r') as file:
         timeline_str = file.read()
-    fps = float(timeline_str[timeline_str.find('fps')-10:timeline_str.find('fps')+3].split(' ')[-2])
+    fps = timeline_str[timeline_str.find('fps')-10:timeline_str.find('fps')+3]
+    fps = float(fps.replace('fps', ' ').replace('  ', ' ').split(' ')[-2])
+    if fps == 23.98:
+        fps = 23.976
     times = np.unique([str_to_seconds(timeline_str[i+4:i+16]) for i in find_all(timeline_str, 'in=')])
-    cuts = (np.round(times*fps)).astype(int)
-    cuts = cuts[cuts > 0]
+    if fps == int(fps):
+        cuts = np.round(times*fps).astype(int)
+    else:
+        cuts = (times*fps).astype(int)
+    cuts = cuts[1:]
     return cuts
