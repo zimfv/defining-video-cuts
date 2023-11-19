@@ -87,6 +87,7 @@ class Video:
         for index in range(input_index, output_index):
             self.video.set(cv2.CAP_PROP_POS_FRAMES, index)
             ret, frame = self.video.read()
+            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             frames.append(frame)
         frames = np.array(frames)
         return frames
