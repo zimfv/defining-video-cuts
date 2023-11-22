@@ -34,6 +34,10 @@ class Video:
         self.height = int(self.video.get(cv2.CAP_PROP_FRAME_HEIGHT))
     
     
+    def __len__(self):
+        return self.length
+    
+    
     def get_frame(self, index):
         """
         Returns frame with given index as np.array shape (self.height, self.width, 3)
@@ -65,7 +69,7 @@ class Video:
             yield self.get_frame(index)
     
     
-    def get_matrix(self, input_index, output_index):
+    def get_matrix(self, input_index, output_index, new_size=None):
         """
         Returns np.array of frames in given io-borders 
         as np.array shape (output_index - input_index, self.height, self.width, 3)
@@ -79,6 +83,9 @@ class Video:
         output_index : int
             Output frame index
         
+        new_size : None or tuple with 2 integers
+            Change video size if not None
+        
         Returns:
         --------
         frames : np.array shape (output_index - input_index, self.height, self.width, 3)
@@ -88,12 +95,14 @@ class Video:
             self.video.set(cv2.CAP_PROP_POS_FRAMES, index)
             ret, frame = self.video.read()
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            if new_size is not None:
+                frame = cv2.resize(frame, new_size)
             frames.append(frame)
         frames = np.array(frames)
         return frames
     
     
-    def generate_matrices(self, matrix_length):
+    def generate_matrices(self, matrix_length, new_size=None):
         """
         Yields self.length - matrix_length frame matrices 
         as np.array shape (matrix_length, self.height, self.width, 3)
@@ -102,9 +111,13 @@ class Video:
         -----------
         matrix_length : int
             Number of frames in matrix
+            
+        new_size : None or tuple with 2 integers
+            Change video size if not None
         """
         for index in range(self.length - matrix_length):
-            yield self.get_matrix(index, index + matrix_length)
+            yield self.get_matrix(index, index + matrix_length, new_size=new_size)
+        
 
 
             
