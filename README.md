@@ -18,6 +18,6 @@ There are disolve and dip to white/black transitions in source videos. I don't l
 The example of cut with dip to black transition you can see in `pics/dipToBlack_cuts0.png`.
 
 ## How I managed this data
-There are 3 Rammstein clips, which contain a lot of actions, like fires or explosions. I used 2 of them to learn and validate. Then checked the model with the 3rd. And I got many false positive results. 
+There are 3 Rammstein clips, which contain a lot of actions, like fires, explosions, flashs or just jerks. I used 2 of them to learn and validate. Then checked the model with the 3rd. And I got many false positive results.
 
 So I checked how the model predict cuts on less agressive video, and tool the video of an another artist. And yes, the model predicts cuts of more peacefull videos a little better.
