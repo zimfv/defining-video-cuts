@@ -10,7 +10,7 @@ I've downloaded videos from Youtube and cut them by Kdenlive.
 | 0 | videos/0.mp4 | Rammstein - Du Hast | https://www.youtube.com/watch?v=W3q8Od5qJio |
 | 1 | videos/1.mp4 | Rammstein - Rosenrot | https://www.youtube.com/watch?v=af59U2BRRAU |
 | 2 | videos/2.mp4 | Rammstein - Sonne | https://www.youtube.com/watch?v=StZcUAPRRac |
-| 3 | videos/3.mp4 | ЗАМАЙ - ОДИНОКОЕ ПЛАМЯ | https://www.youtube.com/watch?v=jn9pwdmKpXU |
+| 3 | videos/3.mp4 | Замай - Одинокое Пламя | https://www.youtube.com/watch?v=jn9pwdmKpXU |
 
 
 There are disolve and dip to white/black transitions in source videos. I don't label the first as cut, but for the second that's possible to see where exactly shot changes, so I labeled them as cuts almost accurate.
