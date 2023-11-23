@@ -1,0 +1,1 @@
+- Video-file videos/2.mp4 has the short cross disolve transition on 01:07:18. I did not labeled that. File is not used in learning. Let's look, how the model will eat this?
