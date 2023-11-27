@@ -38,7 +38,7 @@ class Video:
         return self.length
     
     
-    def get_frame(self, index):
+    def get_frame(self, index, new_size=None):
         """
         Returns frame with given index as np.array shape (self.height, self.width, 3)
         
@@ -47,6 +47,9 @@ class Video:
         index : int
             Frame index
         
+        new_size : None or tuple with 2 integers
+            Change video size if not None
+        
         Returns:
         --------
         frame : np.array shape (self.height, self.width, 3) dtype uint8
@@ -54,6 +57,8 @@ class Video:
         """
         self.video.set(cv2.CAP_PROP_POS_FRAMES, index)
         ret, frame = self.video.read()
+        if new_size is not None:
+            frame = cv2.resize(frame, new_size)
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         return frame
         
