@@ -1,0 +1,4765 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mlt LC_NUMERIC="C" producer="main_bin" version="7.20.0" root="/home/fedora/Jupyter/defining-video-cuts/timelines">
+ <profile frame_rate_num="24000" sample_aspect_num="1" display_aspect_den="137" colorspace="709" progressive="1" description="640x274 23.98fps" display_aspect_num="320" frame_rate_den="1001" width="640" height="274" sample_aspect_den="1"/>
+ <producer id="producer0" in="00:00:00.000" out="00:24:30.197">
+  <property name="length">2147483647</property>
+  <property name="eof">continue</property>
+  <property name="resource">black</property>
+  <property name="aspect_ratio">1</property>
+  <property name="mlt_service">color</property>
+  <property name="kdenlive:playlistid">black_track</property>
+  <property name="mlt_image_format">rgba</property>
+  <property name="set.test_audio">0</property>
+ </producer>
+ <playlist id="playlist0">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <playlist id="playlist1">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <tractor id="tractor0" in="00:00:00.000">
+  <property name="kdenlive:audio_track">1</property>
+  <property name="kdenlive:trackheight">67</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="video" producer="playlist0"/>
+  <track hide="video" producer="playlist1"/>
+  <filter id="filter0">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+   <property name="mlt_service">volume</property>
+   <property name="internal_added">237</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter1">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+   <property name="internal_added">237</property>
+   <property name="start">0.5</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter2">
+   <property name="iec_scale">0</property>
+   <property name="mlt_service">audiolevel</property>
+   <property name="dbpeak">1</property>
+   <property name="disable">1</property>
+  </filter>
+ </tractor>
+ <chain id="chain0" out="00:03:38.914">
+  <property name="length">5249</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/fedora/Jupyter/defining-video-cuts/videos/4.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="format">3</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="vstream">0</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:id">4</property>
+  <property name="kdenlive:clip_type">0</property>
+  <property name="kdenlive:file_size">8155535</property>
+  <property name="kdenlive:file_hash">4fa8ede8c27ccf338f5c1e9b768b0a19</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:audio_max1">256</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">23.976</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">274</property>
+  <property name="meta.media.0.codec.rotate">0</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.color_trc">1</property>
+  <property name="meta.media.0.codec.name">h264</property>
+  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+  <property name="meta.media.0.codec.bit_rate">166459</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2023-11-24T21:29:12.000000Z</property>
+  <property name="meta.attr.0.stream.handler_name.markup">ISO Media file produced by Google Inc. Created on: 11/24/2023.</property>
+  <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">fltp</property>
+  <property name="meta.media.1.codec.sample_rate">44100</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+  <property name="meta.media.1.codec.bit_rate">127999</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2023-11-24T21:29:12.000000Z</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.1.stream.handler_name.markup">ISO Media file produced by Google Inc. Created on: 11/24/2023.</property>
+  <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">isommp42</property>
+  <property name="meta.attr.creation_time.markup">2023-11-24T21:29:12.000000Z</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="meta.media.frame_rate_num">24000</property>
+  <property name="meta.media.frame_rate_den">1001</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.color_trc">1</property>
+  <property name="meta.media.has_b_frames">1</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">274</property>
+  <property name="meta.media.color_range">mpeg</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <playlist id="playlist2">
+  <property name="kdenlive:audio_track">1</property>
+  <entry producer="chain0" in="00:00:00.000" out="00:00:01.001">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:01.043" out="00:00:06.757">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:06.798" out="00:00:09.635">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:09.676" out="00:00:10.802">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:10.844" out="00:00:11.803">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:11.845" out="00:00:12.971">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:13.013" out="00:00:13.972">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:14.014" out="00:00:15.224">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:15.265" out="00:00:16.183">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:16.225" out="00:00:17.267">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:17.309" out="00:00:18.268">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:18.310" out="00:00:19.603">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:19.645" out="00:00:20.479">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:20.520" out="00:00:21.647">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:21.688" out="00:00:22.439">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:22.481" out="00:00:23.565">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:23.607" out="00:00:25.400">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:25.442" out="00:00:27.319">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:27.361" out="00:00:28.862">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:28.904" out="00:00:31.031">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:31.073" out="00:00:32.074">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:32.115" out="00:00:32.991">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:33.033" out="00:00:34.117">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:34.159" out="00:00:34.868">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:34.910" out="00:00:35.827">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:35.869" out="00:00:36.703">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:36.745" out="00:00:37.913">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:37.955" out="00:00:39.081">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:39.122" out="00:00:40.582">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:40.624" out="00:00:41.458">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:41.500" out="00:00:42.501">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:42.542" out="00:00:43.460">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:43.502" out="00:00:44.378">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:44.419" out="00:00:44.711">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:44.753" out="00:00:45.879">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:45.921" out="00:00:46.797">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:46.838" out="00:00:47.714">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:47.756" out="00:00:48.632">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:48.674" out="00:00:49.091">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:49.132" out="00:00:50.259">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:50.300" out="00:00:51.134">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:51.176" out="00:00:51.969">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:52.010" out="00:00:52.761">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:52.803" out="00:00:53.512">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:53.553" out="00:00:54.471">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:54.513" out="00:00:55.138">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:55.180" out="00:00:56.014">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:56.056" out="00:00:56.682">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:56.723" out="00:00:57.474">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:57.516" out="00:00:58.558">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:58.600" out="00:00:59.184">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:00:59.226" out="00:00:59.977">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:00.042" out="00:01:00.876">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:00.918" out="00:01:02.085">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:02.127" out="00:01:03.253">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:03.295" out="00:01:04.463">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:04.504" out="00:01:05.130">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:05.172" out="00:01:06.381">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:06.423" out="00:01:07.090">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:07.132" out="00:01:08.425">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:08.467" out="00:01:09.676">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:09.718" out="00:01:10.802">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:10.844" out="00:01:12.346">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:12.387" out="00:01:13.347">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:13.388" out="00:01:14.556">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:14.598" out="00:01:15.265">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:15.307" out="00:01:16.308">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:16.350" out="00:01:17.267">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:17.309" out="00:01:17.809">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:17.851" out="00:01:18.352">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:18.393" out="00:01:18.769">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:18.810" out="00:01:19.269">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:19.311" out="00:01:19.978">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:20.020" out="00:01:20.562">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:20.604" out="00:01:21.730">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:21.772" out="00:01:22.231">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:22.272" out="00:01:22.981">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:23.023" out="00:01:23.523">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:23.565" out="00:01:24.650">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:24.691" out="00:01:25.150">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:25.192" out="00:01:25.692">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:25.734" out="00:01:26.068">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:26.109" out="00:01:26.360">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:26.401" out="00:01:26.735">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:26.777" out="00:01:27.236">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:27.277" out="00:01:27.653">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:27.694" out="00:01:28.153">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:28.195" out="00:01:29.321">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:29.363" out="00:01:30.447">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:30.489" out="00:01:31.448">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:31.490" out="00:01:31.907">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:31.949" out="00:01:32.658">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:32.699" out="00:01:33.533">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:33.575" out="00:01:34.034">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:34.076" out="00:01:34.826">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:34.868" out="00:01:35.077">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:35.118" out="00:01:35.702">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:35.744" out="00:01:36.787">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:36.828" out="00:01:38.038">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:38.080" out="00:01:38.789">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:38.830" out="00:01:39.289">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:39.331" out="00:01:39.915">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:39.957" out="00:01:40.916">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:40.958" out="00:01:41.625">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:41.667" out="00:01:42.376">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:42.417" out="00:01:42.960">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:43.001" out="00:01:43.335">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:43.377" out="00:01:44.670">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:44.711" out="00:01:45.754">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:45.796" out="00:01:46.880">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:46.922" out="00:01:47.714">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:47.756" out="00:01:48.590">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:48.632" out="00:01:49.424">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:49.466" out="00:01:50.384">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:50.425" out="00:01:51.093">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:51.134" out="00:01:51.760">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:51.802" out="00:01:52.135">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:52.177" out="00:01:52.844">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:52.886" out="00:01:53.470">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:53.512" out="00:01:54.012">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:54.054" out="00:01:54.304">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:54.346" out="00:01:55.013">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:55.055" out="00:01:55.555">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:55.597" out="00:01:57.182">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:57.224" out="00:01:58.558">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:58.600" out="00:01:59.768">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:01:59.810" out="00:02:05.631">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:05.672" out="00:02:11.762">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:11.803" out="00:02:13.263">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:13.305" out="00:02:14.306">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:14.348" out="00:02:15.474">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:15.515" out="00:02:16.850">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:16.892" out="00:02:18.393">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:18.435" out="00:02:19.478">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:19.519" out="00:02:20.562">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:20.604" out="00:02:21.480">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:21.521" out="00:02:22.856">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:22.898" out="00:02:24.816">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:24.858" out="00:02:26.026">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:26.068" out="00:02:28.153">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:28.195" out="00:02:29.279">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:29.321" out="00:02:32.199">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:32.241" out="00:02:33.825">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:33.867" out="00:02:35.494">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:35.535" out="00:02:36.703">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:36.745" out="00:02:38.288">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:38.330" out="00:02:38.872">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:38.914" out="00:02:40.457">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:40.499" out="00:02:41.083">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:41.124" out="00:02:42.626">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:42.668" out="00:02:43.669">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:43.710" out="00:02:44.461">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:44.503" out="00:02:45.003">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:45.045" out="00:02:45.796">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:45.837" out="00:02:46.713">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:46.755" out="00:02:47.256">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:47.297" out="00:02:47.923">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:47.965" out="00:02:48.423">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:48.465" out="00:02:48.840">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:48.882" out="00:02:50.384">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:50.425" out="00:02:50.842">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:50.884" out="00:02:51.301">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:51.343" out="00:02:52.219">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:52.261" out="00:02:52.761">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:52.803" out="00:02:53.178">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:53.220" out="00:02:53.679">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:53.720" out="00:02:53.845">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:53.887" out="00:02:54.096">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:54.137" out="00:02:54.638">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:54.680" out="00:02:55.305">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:55.347" out="00:02:56.098">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:56.139" out="00:02:56.598">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:56.640" out="00:02:56.974">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:57.015" out="00:02:57.683">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:57.724" out="00:02:58.725">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:58.767" out="00:02:59.142">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:59.184" out="00:02:59.434">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:02:59.476" out="00:03:00.042">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:00.083" out="00:03:00.417">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:00.459" out="00:03:01.001">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:01.043" out="00:03:01.960">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:02.002" out="00:03:02.419">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:02.461" out="00:03:03.795">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:03.837" out="00:03:04.838">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:04.880" out="00:03:05.547">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:05.589" out="00:03:06.340">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:06.381" out="00:03:07.341">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:07.382" out="00:03:08.050">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:08.091" out="00:03:08.675">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:08.717" out="00:03:11.887">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:11.929" out="00:03:13.555">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:13.597" out="00:03:14.640">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:14.681" out="00:03:15.724">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:15.766" out="00:03:17.517">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:17.559" out="00:03:18.769">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:18.810" out="00:03:19.978">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:20.020" out="00:03:21.605">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:21.647" out="00:03:22.356">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:22.397" out="00:03:25.859">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:25.901" out="00:03:28.111">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:28.153" out="00:03:29.988">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:30.030" out="00:03:34.576">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:34.618" out="00:03:37.913">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain0" in="00:03:37.955" out="00:03:38.914">
+   <property name="kdenlive:id">4</property>
+  </entry>
+ </playlist>
+ <playlist id="playlist3">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <tractor id="tractor1" in="00:00:00.000" out="00:03:38.914">
+  <property name="kdenlive:audio_track">1</property>
+  <property name="kdenlive:trackheight">67</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="both" producer="playlist2"/>
+  <track hide="both" producer="playlist3"/>
+  <filter id="filter3">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+   <property name="mlt_service">volume</property>
+   <property name="internal_added">237</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter4">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+   <property name="internal_added">237</property>
+   <property name="start">0.5</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter5">
+   <property name="iec_scale">0</property>
+   <property name="mlt_service">audiolevel</property>
+   <property name="dbpeak">1</property>
+   <property name="disable">1</property>
+  </filter>
+ </tractor>
+ <chain id="chain1" out="00:03:38.914">
+  <property name="length">5249</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/fedora/Jupyter/defining-video-cuts/videos/4.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="format">3</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="vstream">0</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:id">4</property>
+  <property name="kdenlive:clip_type">0</property>
+  <property name="kdenlive:file_size">8155535</property>
+  <property name="kdenlive:file_hash">4fa8ede8c27ccf338f5c1e9b768b0a19</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:audio_max1">256</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">23.976</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">274</property>
+  <property name="meta.media.0.codec.rotate">0</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.color_trc">1</property>
+  <property name="meta.media.0.codec.name">h264</property>
+  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+  <property name="meta.media.0.codec.bit_rate">166459</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2023-11-24T21:29:12.000000Z</property>
+  <property name="meta.attr.0.stream.handler_name.markup">ISO Media file produced by Google Inc. Created on: 11/24/2023.</property>
+  <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">fltp</property>
+  <property name="meta.media.1.codec.sample_rate">44100</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+  <property name="meta.media.1.codec.bit_rate">127999</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2023-11-24T21:29:12.000000Z</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.1.stream.handler_name.markup">ISO Media file produced by Google Inc. Created on: 11/24/2023.</property>
+  <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">isommp42</property>
+  <property name="meta.attr.creation_time.markup">2023-11-24T21:29:12.000000Z</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="meta.media.frame_rate_num">24000</property>
+  <property name="meta.media.frame_rate_den">1001</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.color_trc">1</property>
+  <property name="meta.media.has_b_frames">1</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">274</property>
+  <property name="meta.media.color_range">mpeg</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="set.test_audio">1</property>
+  <property name="set.test_image">0</property>
+ </chain>
+ <playlist id="playlist4">
+  <entry producer="chain1" in="00:00:00.000" out="00:00:01.001">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:01.043" out="00:00:06.757">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:06.798" out="00:00:09.635">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:09.676" out="00:00:10.802">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:10.844" out="00:00:11.803">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:11.845" out="00:00:12.971">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:13.013" out="00:00:13.972">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:14.014" out="00:00:15.224">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:15.265" out="00:00:16.183">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:16.225" out="00:00:17.267">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:17.309" out="00:00:18.268">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:18.310" out="00:00:19.603">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:19.645" out="00:00:20.479">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:20.520" out="00:00:21.647">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:21.688" out="00:00:22.439">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:22.481" out="00:00:23.565">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:23.607" out="00:00:25.400">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:25.442" out="00:00:27.319">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:27.361" out="00:00:28.862">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:28.904" out="00:00:31.031">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:31.073" out="00:00:32.074">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:32.115" out="00:00:32.991">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:33.033" out="00:00:34.117">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:34.159" out="00:00:34.868">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:34.910" out="00:00:35.827">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:35.869" out="00:00:36.703">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:36.745" out="00:00:37.913">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:37.955" out="00:00:39.081">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:39.122" out="00:00:40.582">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:40.624" out="00:00:41.458">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:41.500" out="00:00:42.501">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:42.542" out="00:00:43.460">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:43.502" out="00:00:44.378">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:44.419" out="00:00:44.711">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:44.753" out="00:00:45.879">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:45.921" out="00:00:46.797">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:46.838" out="00:00:47.714">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:47.756" out="00:00:48.632">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:48.674" out="00:00:49.091">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:49.132" out="00:00:50.259">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:50.300" out="00:00:51.134">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:51.176" out="00:00:51.969">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:52.010" out="00:00:52.761">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:52.803" out="00:00:53.512">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:53.553" out="00:00:54.471">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:54.513" out="00:00:55.138">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:55.180" out="00:00:56.014">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:56.056" out="00:00:56.682">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:56.723" out="00:00:57.474">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:57.516" out="00:00:58.558">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:58.600" out="00:00:59.184">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:00:59.226" out="00:00:59.977">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:00.042" out="00:01:00.876">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:00.918" out="00:01:02.085">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:02.127" out="00:01:03.253">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:03.295" out="00:01:04.463">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:04.504" out="00:01:05.130">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:05.172" out="00:01:06.381">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:06.423" out="00:01:07.090">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:07.132" out="00:01:08.425">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:08.467" out="00:01:09.676">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:09.718" out="00:01:10.802">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:10.844" out="00:01:12.346">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:12.387" out="00:01:13.347">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:13.388" out="00:01:14.556">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:14.598" out="00:01:15.265">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:15.307" out="00:01:16.308">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:16.350" out="00:01:17.267">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:17.309" out="00:01:17.809">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:17.851" out="00:01:18.352">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:18.393" out="00:01:18.769">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:18.810" out="00:01:19.269">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:19.311" out="00:01:19.978">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:20.020" out="00:01:20.562">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:20.604" out="00:01:21.730">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:21.772" out="00:01:22.231">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:22.272" out="00:01:22.981">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:23.023" out="00:01:23.523">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:23.565" out="00:01:24.650">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:24.691" out="00:01:25.150">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:25.192" out="00:01:25.692">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:25.734" out="00:01:26.068">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:26.109" out="00:01:26.360">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:26.401" out="00:01:26.735">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:26.777" out="00:01:27.236">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:27.277" out="00:01:27.653">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:27.694" out="00:01:28.153">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:28.195" out="00:01:29.321">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:29.363" out="00:01:30.447">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:30.489" out="00:01:31.448">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:31.490" out="00:01:31.907">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:31.949" out="00:01:32.658">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:32.699" out="00:01:33.533">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:33.575" out="00:01:34.034">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:34.076" out="00:01:34.826">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:34.868" out="00:01:35.077">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:35.118" out="00:01:35.702">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:35.744" out="00:01:36.787">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:36.828" out="00:01:38.038">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:38.080" out="00:01:38.789">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:38.830" out="00:01:39.289">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:39.331" out="00:01:39.915">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:39.957" out="00:01:40.916">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:40.958" out="00:01:41.625">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:41.667" out="00:01:42.376">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:42.417" out="00:01:42.960">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:43.001" out="00:01:43.335">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:43.377" out="00:01:44.670">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:44.711" out="00:01:45.754">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:45.796" out="00:01:46.880">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:46.922" out="00:01:47.714">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:47.756" out="00:01:48.590">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:48.632" out="00:01:49.424">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:49.466" out="00:01:50.384">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:50.425" out="00:01:51.093">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:51.134" out="00:01:51.760">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:51.802" out="00:01:52.135">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:52.177" out="00:01:52.844">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:52.886" out="00:01:53.470">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:53.512" out="00:01:54.012">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:54.054" out="00:01:54.304">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:54.346" out="00:01:55.013">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:55.055" out="00:01:55.555">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:55.597" out="00:01:57.182">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:57.224" out="00:01:58.558">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:58.600" out="00:01:59.768">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:01:59.810" out="00:02:05.631">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:05.672" out="00:02:11.762">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:11.803" out="00:02:13.263">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:13.305" out="00:02:14.306">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:14.348" out="00:02:15.474">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:15.515" out="00:02:16.850">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:16.892" out="00:02:18.393">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:18.435" out="00:02:19.478">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:19.519" out="00:02:20.562">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:20.604" out="00:02:21.480">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:21.521" out="00:02:22.856">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:22.898" out="00:02:24.816">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:24.858" out="00:02:26.026">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:26.068" out="00:02:28.153">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:28.195" out="00:02:29.279">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:29.321" out="00:02:32.199">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:32.241" out="00:02:33.825">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:33.867" out="00:02:35.494">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:35.535" out="00:02:36.703">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:36.745" out="00:02:38.288">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:38.330" out="00:02:38.872">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:38.914" out="00:02:40.457">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:40.499" out="00:02:41.083">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:41.124" out="00:02:42.626">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:42.668" out="00:02:43.669">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:43.710" out="00:02:44.461">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:44.503" out="00:02:45.003">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:45.045" out="00:02:45.796">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:45.837" out="00:02:46.713">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:46.755" out="00:02:47.256">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:47.297" out="00:02:47.923">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:47.965" out="00:02:48.423">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:48.465" out="00:02:48.840">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:48.882" out="00:02:50.384">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:50.425" out="00:02:50.842">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:50.884" out="00:02:51.301">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:51.343" out="00:02:52.219">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:52.261" out="00:02:52.761">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:52.803" out="00:02:53.178">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:53.220" out="00:02:53.679">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:53.720" out="00:02:53.845">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:53.887" out="00:02:54.096">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:54.137" out="00:02:54.638">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:54.680" out="00:02:55.305">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:55.347" out="00:02:56.098">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:56.139" out="00:02:56.598">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:56.640" out="00:02:56.974">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:57.015" out="00:02:57.683">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:57.724" out="00:02:58.725">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:58.767" out="00:02:59.142">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:59.184" out="00:02:59.434">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:02:59.476" out="00:03:00.042">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:00.083" out="00:03:00.417">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:00.459" out="00:03:01.001">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:01.043" out="00:03:01.960">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:02.002" out="00:03:02.419">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:02.461" out="00:03:03.795">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:03.837" out="00:03:04.838">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:04.880" out="00:03:05.547">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:05.589" out="00:03:06.340">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:06.381" out="00:03:07.341">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:07.382" out="00:03:08.050">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:08.091" out="00:03:08.675">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:08.717" out="00:03:11.887">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:11.929" out="00:03:13.555">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:13.597" out="00:03:14.640">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:14.681" out="00:03:15.724">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:15.766" out="00:03:17.517">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:17.559" out="00:03:18.769">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:18.810" out="00:03:19.978">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:20.020" out="00:03:21.605">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:21.647" out="00:03:22.356">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:22.397" out="00:03:25.859">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:25.901" out="00:03:28.111">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:28.153" out="00:03:29.988">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:30.030" out="00:03:34.576">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:34.618" out="00:03:37.913">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain1" in="00:03:37.955" out="00:03:38.914">
+   <property name="kdenlive:id">4</property>
+  </entry>
+ </playlist>
+ <playlist id="playlist5"/>
+ <tractor id="tractor2" in="00:00:00.000" out="00:03:38.914">
+  <property name="kdenlive:trackheight">67</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="audio" producer="playlist4"/>
+  <track hide="audio" producer="playlist5"/>
+ </tractor>
+ <playlist id="playlist6"/>
+ <playlist id="playlist7"/>
+ <tractor id="tractor3" in="00:00:00.000">
+  <property name="kdenlive:trackheight">67</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="audio" producer="playlist6"/>
+  <track hide="audio" producer="playlist7"/>
+ </tractor>
+ <tractor id="{e24cf060-037b-443b-8f19-b1f6a826bbb8}" in="00:00:00.000" out="00:03:38.914">
+  <property name="kdenlive:uuid">{e24cf060-037b-443b-8f19-b1f6a826bbb8}</property>
+  <property name="kdenlive:clipname">Sequence 1</property>
+  <property name="kdenlive:sequenceproperties.hasAudio">1</property>
+  <property name="kdenlive:sequenceproperties.hasVideo">1</property>
+  <property name="kdenlive:sequenceproperties.activeTrack">2</property>
+  <property name="kdenlive:sequenceproperties.tracksCount">4</property>
+  <property name="kdenlive:sequenceproperties.documentuuid">{e24cf060-037b-443b-8f19-b1f6a826bbb8}</property>
+  <property name="kdenlive:duration">00:03:38:22</property>
+  <property name="kdenlive:maxduration">5249</property>
+  <property name="kdenlive:producer_type">17</property>
+  <property name="kdenlive:id">3</property>
+  <property name="kdenlive:clip_type">0</property>
+  <property name="kdenlive:file_hash">a5f194c3609f9964c422bf9715fcc9b4</property>
+  <property name="kdenlive:folderid">2</property>
+  <property name="kdenlive:sequenceproperties.audioTarget">1</property>
+  <property name="kdenlive:sequenceproperties.tracks">4</property>
+  <property name="kdenlive:sequenceproperties.verticalzoom">1</property>
+  <property name="kdenlive:sequenceproperties.videoTarget">2</property>
+  <property name="kdenlive:sequenceproperties.zonein">0</property>
+  <property name="kdenlive:sequenceproperties.zoneout">5249</property>
+  <property name="kdenlive:sequenceproperties.zoom">3</property>
+  <property name="kdenlive:sequenceproperties.groups">[
+    {
+        "children": [
+            {
+                "data": "1:2843",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2843",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2810",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2810",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2771",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2771",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2758",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2758",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2741",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2741",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2734",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2734",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2721",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2721",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2706",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2706",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2689",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2689",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2680",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2680",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2664",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2664",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2647",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2647",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2624",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2624",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2604",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2604",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2583",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2583",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2563",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2563",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2536",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2536",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2510",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2510",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2478",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2478",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2469",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2469",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2455",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2455",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2437",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2437",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2420",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2420",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2396",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2396",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2381",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2381",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2369",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2369",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2351",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2351",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2321",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2321",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2295",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2295",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2280",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2280",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2274",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2274",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2255",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2255",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2243",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2243",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2222",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2222",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2204",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2204",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2193",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2193",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2169",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2169",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2142",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2142",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2114",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2114",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2102",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2102",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2092",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2092",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2080",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2080",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2071",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2071",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2055",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2055",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2064",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2064",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2042",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2042",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2030",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2030",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:2003",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:2003",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1990",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1990",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1972",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1972",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1960",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1960",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1932",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1932",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1918",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1918",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1901",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1901",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1889",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1889",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1879",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1879",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1866",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1866",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1853",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1853",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1830",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1830",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1805",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1805",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1788",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1788",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1759",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1759",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1735",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1735",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1698",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1698",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1671",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1671",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1641",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1641",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1609",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1609",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1592",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1592",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:910",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:910",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:881",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:881",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:860",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:860",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:837",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:837",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:819",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:819",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:792",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:792",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:770",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:770",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:745",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:745",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:693",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:693",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3729",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3729",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:610",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:610",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3758",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3758",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:656",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:656",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3796",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3796",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3810",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3810",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3848",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3848",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3863",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3863",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3900",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3900",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3925",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3925",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3944",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3944",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3957",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3957",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3976",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3976",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3998",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3998",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:938",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:938",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4011",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4011",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:974",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:974",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4027",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4027",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:995",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:995",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4039",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4039",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1020",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1020",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4049",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4049",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1043",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1043",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4086",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4086",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1065",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1065",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4097",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4097",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1073",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1073",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4108",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4108",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1101",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1101",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4130",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4130",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1123",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1123",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4143",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4143",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1145",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1145",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4153",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4153",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1167",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1167",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4165",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4165",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1178",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1178",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4169",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4169",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1206",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1206",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4175",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4175",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1227",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1227",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4188",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4188",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1247",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1247",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4204",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4204",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1266",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1266",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4223",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4223",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1284",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1284",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4235",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4235",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1307",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1307",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4244",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4244",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1323",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1323",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4601",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4601",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4641",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4641",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4667",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4667",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4693",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4693",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4736",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4736",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4766",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4766",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4795",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4795",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4834",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4834",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4852",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4852",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4936",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4936",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4990",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4990",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:5035",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:5035",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:5145",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:5145",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4524",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4524",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4509",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4509",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4492",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4492",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4468",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4468",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4449",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4449",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4432",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4432",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1562",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1562",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4407",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4407",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1546",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1546",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4374",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4374",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1517",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1517",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4363",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4363",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1489",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1489",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4340",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4340",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1460",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1460",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4326",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4326",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1439",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1439",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4317",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4317",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1420",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1420",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4303",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4303",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1405",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1405",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4296",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4296",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1379",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1379",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:4286",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:4286",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:1360",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:1360",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:4261",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:4261",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:1344",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:1344",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3689",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3689",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:566",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:566",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3650",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3650",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:539",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:539",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3580",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3580",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:520",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:520",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3553",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3553",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:492",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:492",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3502",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3502",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:471",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:471",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3473",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3473",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:439",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:439",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3426",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3426",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:415",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:415",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3393",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3393",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:389",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:389",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3371",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3371",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:366",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:366",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3345",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3345",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:336",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:336",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3319",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3319",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:312",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:312",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3282",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3282",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:284",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:284",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3249",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3249",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:260",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:260",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3221",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3221",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:232",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:232",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3196",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3196",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:163",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:163",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:3160",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:3160",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:25",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:25",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:3013",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:3013",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "1:0",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "2:0",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:2872",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:2872",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    },
+    {
+        "children": [
+            {
+                "data": "2:5225",
+                "leaf": "clip",
+                "type": "Leaf"
+            },
+            {
+                "data": "1:5225",
+                "leaf": "clip",
+                "type": "Leaf"
+            }
+        ],
+        "type": "AVSplit"
+    }
+]
+</property>
+  <property name="kdenlive:sequenceproperties.guides">[
+]
+</property>
+  <property name="kdenlive:sequenceproperties.position">5248</property>
+  <property name="kdenlive:sequenceproperties.scrollPos">26179</property>
+  <property name="kdenlive:sequenceproperties.disablepreview">0</property>
+  <track producer="producer0"/>
+  <track producer="tractor0"/>
+  <track producer="tractor1"/>
+  <track producer="tractor2"/>
+  <track producer="tractor3"/>
+  <transition id="transition0">
+   <property name="a_track">0</property>
+   <property name="b_track">1</property>
+   <property name="mlt_service">mix</property>
+   <property name="kdenlive_id">mix</property>
+   <property name="internal_added">237</property>
+   <property name="always_active">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="transition1">
+   <property name="a_track">0</property>
+   <property name="b_track">2</property>
+   <property name="mlt_service">mix</property>
+   <property name="kdenlive_id">mix</property>
+   <property name="internal_added">237</property>
+   <property name="always_active">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="transition2">
+   <property name="a_track">0</property>
+   <property name="b_track">3</property>
+   <property name="compositing">0</property>
+   <property name="distort">0</property>
+   <property name="rotate_center">0</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition3">
+   <property name="a_track">0</property>
+   <property name="b_track">4</property>
+   <property name="compositing">0</property>
+   <property name="distort">0</property>
+   <property name="rotate_center">0</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <filter id="filter6">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+   <property name="mlt_service">volume</property>
+   <property name="internal_added">237</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter7">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+   <property name="internal_added">237</property>
+   <property name="start">0.5</property>
+   <property name="disable">1</property>
+  </filter>
+ </tractor>
+ <chain id="chain2" out="00:03:38.914">
+  <property name="length">5249</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/fedora/Jupyter/defining-video-cuts/videos/4.mp4</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">23.976</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">274</property>
+  <property name="meta.media.0.codec.rotate">0</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.color_trc">1</property>
+  <property name="meta.media.0.codec.name">h264</property>
+  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+  <property name="meta.media.0.codec.bit_rate">166459</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2023-11-24T21:29:12.000000Z</property>
+  <property name="meta.attr.0.stream.handler_name.markup">ISO Media file produced by Google Inc. Created on: 11/24/2023.</property>
+  <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">fltp</property>
+  <property name="meta.media.1.codec.sample_rate">44100</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+  <property name="meta.media.1.codec.bit_rate">127999</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2023-11-24T21:29:12.000000Z</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.1.stream.handler_name.markup">ISO Media file produced by Google Inc. Created on: 11/24/2023.</property>
+  <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">isommp42</property>
+  <property name="meta.attr.creation_time.markup">2023-11-24T21:29:12.000000Z</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="format">3</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="vstream">0</property>
+  <property name="meta.media.frame_rate_num">24000</property>
+  <property name="meta.media.frame_rate_den">1001</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.color_trc">1</property>
+  <property name="meta.media.has_b_frames">1</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">274</property>
+  <property name="meta.media.color_range">mpeg</property>
+  <property name="astream">0</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="kdenlive:id">4</property>
+  <property name="kdenlive:clip_type">0</property>
+  <property name="kdenlive:file_size">8155535</property>
+  <property name="kdenlive:file_hash">4fa8ede8c27ccf338f5c1e9b768b0a19</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:audio_max1">256</property>
+ </chain>
+ <playlist id="main_bin">
+  <property name="kdenlive:folder.-1.2">Sequences</property>
+  <property name="kdenlive:sequenceFolder">2</property>
+  <property name="kdenlive:docproperties.audioChannels">2</property>
+  <property name="kdenlive:docproperties.browserurl">/home/fedora/Videos/</property>
+  <property name="kdenlive:docproperties.compositing">1</property>
+  <property name="kdenlive:docproperties.documentid">1701294465009</property>
+  <property name="kdenlive:docproperties.enableTimelineZone">0</property>
+  <property name="kdenlive:docproperties.enableexternalproxy">0</property>
+  <property name="kdenlive:docproperties.enableproxy">0</property>
+  <property name="kdenlive:docproperties.externalproxyparams"/>
+  <property name="kdenlive:docproperties.generateimageproxy">0</property>
+  <property name="kdenlive:docproperties.generateproxy">0</property>
+  <property name="kdenlive:docproperties.guidesCategories">[
+    {
+        "color": "#9b59b6",
+        "comment": "Category 1",
+        "index": 0
+    },
+    {
+        "color": "#3daee9",
+        "comment": "Category 2",
+        "index": 1
+    },
+    {
+        "color": "#1abc9c",
+        "comment": "Category 3",
+        "index": 2
+    },
+    {
+        "color": "#1cdc9a",
+        "comment": "Category 4",
+        "index": 3
+    },
+    {
+        "color": "#c9ce3b",
+        "comment": "Category 5",
+        "index": 4
+    },
+    {
+        "color": "#fdbc4b",
+        "comment": "Category 6",
+        "index": 5
+    },
+    {
+        "color": "#f39c1f",
+        "comment": "Category 7",
+        "index": 6
+    },
+    {
+        "color": "#f47750",
+        "comment": "Category 8",
+        "index": 7
+    },
+    {
+        "color": "#da4453",
+        "comment": "Category 9",
+        "index": 8
+    }
+]
+</property>
+  <property name="kdenlive:docproperties.kdenliveversion">23.08.3</property>
+  <property name="kdenlive:docproperties.previewextension"/>
+  <property name="kdenlive:docproperties.previewparameters"/>
+  <property name="kdenlive:docproperties.profile">/home/fedora/.local/share/kdenlive/profiles/customprofile2</property>
+  <property name="kdenlive:docproperties.proxyextension"/>
+  <property name="kdenlive:docproperties.proxyimageminsize">2000</property>
+  <property name="kdenlive:docproperties.proxyimagesize">800</property>
+  <property name="kdenlive:docproperties.proxyminsize">1000</property>
+  <property name="kdenlive:docproperties.proxyparams"/>
+  <property name="kdenlive:docproperties.proxyresize">640</property>
+  <property name="kdenlive:docproperties.seekOffset">30000</property>
+  <property name="kdenlive:docproperties.uuid">{e24cf060-037b-443b-8f19-b1f6a826bbb8}</property>
+  <property name="kdenlive:docproperties.version">1.1</property>
+  <property name="kdenlive:expandedFolders"/>
+  <property name="kdenlive:binZoom">4</property>
+  <property name="kdenlive:documentnotes"/>
+  <property name="kdenlive:docproperties.opensequences">{e24cf060-037b-443b-8f19-b1f6a826bbb8}</property>
+  <property name="kdenlive:docproperties.activetimeline">{e24cf060-037b-443b-8f19-b1f6a826bbb8}</property>
+  <property name="xml_retain">1</property>
+  <entry producer="{e24cf060-037b-443b-8f19-b1f6a826bbb8}" in="00:00:00.000" out="00:00:00.000"/>
+  <entry producer="chain2" in="00:00:00.000" out="00:03:38.914"/>
+ </playlist>
+ <tractor id="tractor4" in="00:00:00.000" out="00:03:38.914">
+  <property name="kdenlive:projectTractor">1</property>
+  <track producer="{e24cf060-037b-443b-8f19-b1f6a826bbb8}" in="00:00:00.000" out="00:03:38.914"/>
+ </tractor>
+</mlt>

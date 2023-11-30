@@ -38,6 +38,11 @@ class Video:
         return self.length
     
     
+    def get_fps(self):
+        # returns FPS (frames per second) float value
+        return self.video.get(cv2.CAP_PROP_FPS)
+    
+    
     def get_frame(self, index, new_size=None):
         """
         Returns frame with given index as np.array shape (self.height, self.width, 3)
@@ -148,14 +153,15 @@ def str_to_seconds(time):
     return r.sum()
 
 
-def get_cuts(filename):
+def get_cuts(filename, fps=None):
     # return array of cut moments (frame_id)
     with open(filename, 'r') as file:
         timeline_str = file.read()
-    fps = timeline_str[timeline_str.find('fps')-10:timeline_str.find('fps')+3]
-    fps = float(fps.replace('fps', ' ').replace('  ', ' ').split(' ')[-2])
-    if fps == 23.98:
-        fps = 23.976
+    if fps is None:
+        fps = timeline_str[timeline_str.find('fps')-10:timeline_str.find('fps')+3]
+        fps = float(fps.replace('fps', ' ').replace('  ', ' ').split(' ')[-2])
+        if fps == 23.98:
+            fps = 23.976
     times = np.unique([str_to_seconds(timeline_str[i+4:i+16]) for i in find_all(timeline_str, 'in=')])
     if fps == int(fps):
         cuts = np.round(times*fps).astype(int)
