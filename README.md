@@ -16,6 +16,8 @@ I've downloaded videos from Youtube and cut them by Kdenlive.
 | 6 | videos/6.mp4 | Crystal Castles - Celestica | https://www.youtube.com/watch?v=IsxNUl1IHnE |
 | 7 | videos/7.mp4 | Grimes - Oblivion | https://www.youtube.com/watch?v=JtH68PJIQLE |
 | 8 | videos/8.mp4 | Lana Del Rey - Born To Die | https://www.youtube.com/watch?v=Bag1gUxuU0g |
+| 9 | videos/9.mp4 | Rihanna - Diamonds | https://www.youtube.com/watch?v=lWA2pjMjpBs |
+| 10 | videos/10.mp4 | Joji - Gimme Love | https://www.youtube.com/watch?v=jPan651rVMs |
 
 
 There are disolve and dip to white/black transitions in source videos. I don't label the first as cut, but for the second that's possible to see where exactly shot changes, so I labeled them as cuts almost accurate.
